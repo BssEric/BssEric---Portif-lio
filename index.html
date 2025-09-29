@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Éric Botelho – Portfólio</title>
+  <meta name="description" content="Portfólio de Éric Botelho – Desenvolvedor Web, Front-End e UI Design." />
+
+  <!-- Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5V9G8YQ4S+J5V8G8Y5v7vC18JNpD33rD+fC8hz7P8mG8jw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfE5PZxC3GJQZ3Yx2Q1WQkU8m8d9Ck3n3d22NnXqZlCq3RNXG2Xr3YNA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="IMG/logotipo.jpeg" type="image/x-icon">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="wrap">
+      <div class="brand">
+        <span class="dot"></span>
+        <a href="#home" class="logo">Éric Botelho</a>
+      </div>
+      <div class="links">
+        <a class="link" href="#home">Início</a>
+        <a class="link" href="#projetos">Projetos</a>
+        <a class="link" href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / APRESENTAÇÃO -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="hi">Olá, sou o Éric 👋</p>
+          <h1 class="title">Construo experiências web <span class="accent">rápidas</span>, <span class="accent">acessíveis</span> e <span class="accent">bonitas</span>.</h1>
+          <p class="subtitle">Desenvolvedor em formação apaixonado por interfaces modernas, animações e produtos que geram valor real.</p>
+
+          <div class="roles">
+            <span id="typed"></span><span class="caret">&nbsp;</span>
+          </div>
+
+          <div class="cta">
+            <a class="btn primary" href="#projetos"><i class="fa-solid fa-rocket"></i>&nbsp; Ver projetos</a>
+            <a class="btn" href="#contato"><i class="fa-solid fa-paper-plane"></i>&nbsp; Fale comigo</a>
+          </div>
+
+          <div class="socials" aria-label="Minhas redes">
+            <a class="sicon" href="https://www.linkedin.com/in/%C3%A9ric-botelho-4055442b3/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"><img src="IMG/linkedin-svgrepo-com.png" height="30px" width="30px"></i></a>
+            <a class="sicon" href="https://github.com/BssEric" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"><img src="IMG/github-142-svgrepo-com.png" height="30px" width="30px"></i></a>
+            <a class="sicon" href="mailto:ericbotelho18@gmail.com" title="Gmail"><i class="fa-solid fa-envelope"><img src="IMG/gmail-svgrepo-com.png" height="30px" width="30px"></i></a>
+          </div>
+        </div>
+
+        <div class="visual">
+          <!-- Canvas Three.js -->
+          <canvas id="scene"></canvas>
+          <!-- Cartão com foto -->
+          <div class="pfp">
+            <img src="IMG/Profileimage.jpeg" alt="Foto de perfil do Éric" />
+            <div>
+              <div class="name">Éric Botelho</div>
+              <div class="role">Front-End • UI Design</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Projetos em destaque</h2>
+        <a class="link" href="https://github.com/BssEric" target="_blank" rel="noopener">Ver todos no GitHub ↗</a>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/dunkgame.jpeg" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>Dunk Game</h3>
+            <p>Jogo de basquete em HTML com física simples e animações suaves.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://dunk-game.vercel.app" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/fitlifeproject.jpeg" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>FitLife</h3>
+            <p>Site para interessados em academia, com Local Storage e UI responsiva.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">Bootstrap</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://fit-life-suplementos.vercel.app" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/bremtproject.jpeg" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>Brelmt Studios</h3>
+            <p>Landing page moderna para uma empresa de Desenvolvimento de Games.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://brelmt-site-fyyu2jhnd-bsseric-s-projects.vercel.app" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/petversofoto.png" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>PetVerso</h3>
+            <p>O Pet Verso é uma página dedicada ao cuidado e bem-estar dos animais de estimação. </p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="bsseric.github.io/PetVerso" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/etrmfoto.png" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>ETRM - Accounting</h3>
+            <p>Landing page desenvolvida para apresentar o projeto ETRM - Accounting, idealizado pelo criador Tiago Akamine.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://bsseric.github.io/ETRM---Accounting/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="card">
+          <div class="thumb"><img src="IMG/Hooperfoto.png" height="183px" width="350px"></div>
+          <div class="body">
+            <h3>HooperZone</h3>
+            <p>O HooperZone é um site em desenvolvimento focado na divulgação de roupas e acessórios de basquete.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="bsseric.github.io/HooperZone/" target="_blank" rel="noopener">Live</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="container">
+      <div class="sec-head">
+        <h2>Entre em contato</h2>
+        <span class="link" style="opacity:.8">Vamos tirar sua ideia do papel!</span>
+      </div>
+
+      <div class="contact">
+        <form id="contact-form" autocomplete="on">
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:12px;">
+            <div>
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+            </div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco do seu projeto..."></textarea>
+          </div>
+          <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane"></i>&nbsp; Enviar</button>
+          <p id="form-status" style="margin-top:10px; color: var(--muted);"></p>
+        </form>
+
+        <div class="info">
+          <h3 style="margin:0 0 6px 0;">Preferências</h3>
+          <p style="margin:0 0 8px 0; color:var(--muted);">Projetos front-end, landing pages, UI moderna e integrações simples.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">GSAP</span>
+            <span class="tag">Three.js</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">UI VERSE</span>
+          </div>
+          <div style="margin-top:8px; display:flex; gap:10px;">
+            <a class="btn" href="mailto:ericbotelho18@gmail.com">Enviar email</a>
+            <a class="btn" href="https://wa.me/5511999496913" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Éric Botelho. Feito com HTML, CSS, JS e Three.js.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
